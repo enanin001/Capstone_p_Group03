@@ -47,4 +47,4 @@
    - Any supporting documents, such as detailed technical specifications, market research data, etc.
 
 **11. References**
-   - Cite any external sources referenced in your proposal.
+   - Cite any external sources referenced in your proposal._
