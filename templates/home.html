@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: powderblue;
+        }
+
+        #navContent {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-link {
+            color: powderblue;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: pink;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div id="navContent">
+      <div class="flex-center">
+        <h1 style="color: powderblue;">Capstone Project Group 03 - Spring 2024</h1>
+        <!-- nav -->
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('display') }}">Project Display</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('workflow') }}">Our Workflow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Memo</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
