@@ -12,3 +12,6 @@ def workflow():
 @app.route('/display',methods=['POST', 'GET'])
 def display():
     return render_template('display.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)

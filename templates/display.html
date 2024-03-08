@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project Group 03 - Spring 2024</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
     <style>
         body, html {
             height: 100%;
@@ -19,12 +19,33 @@
             align-items: center;
             background-color: powderblue;
         }
+
+        .form-upload {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .btn-custom {
+            color: powderblue; !important; 
+            background-color: white; 
+            border-color: pink; 
+        } 
+        .form-control-file {
+            color: pink;
+        }
     </style>
 </head>
 <body>
     <div class="flex-center">
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Need more time</span>
+        <div class="form-upload">
+            <h2 style = "color: powderblue;">Upload a Waste Image</h2>
+            <form action="YOUR_BACKEND_ENDPOINT" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label style = "color: powderblue;" for="wasteImage">Select image:</label>
+                    <input type="file" class="form-control-file" id="wasteImage" name="wasteImage" required>
+                </div>
+                <button type="submit" class="btn btn-custom">Upload</button>
+            </form>
         </div>
     </div>
 
@@ -34,3 +55,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
