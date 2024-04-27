@@ -12,7 +12,6 @@ app = Flask(__name__, static_folder='static')
 app.add_url_rule('/uploads/<filename>', 'uploaded_file', build_only=True)
 
 class_names = ['organic', 'recyclable']
-#class_names = [ 'recyclable','organic']
 
 # Load the mbv2
 model = load_model('mobilenet_model')
